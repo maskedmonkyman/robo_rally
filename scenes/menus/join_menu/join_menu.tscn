@@ -1,0 +1,75 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scenes/menus/join_menu/join_menu.gd" type="Script" id=1]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 0.949982
+margin_right = 0.949951
+script = ExtResource( 1 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 459.35
+margin_top = 73.2
+margin_right = 494.35
+margin_bottom = 91.2
+text = "join game"
+
+[node name="ipLabel" type="Label" parent="."]
+margin_left = 191.95
+margin_top = 170.7
+margin_right = 231.95
+margin_bottom = 184.7
+text = "IP"
+
+[node name="ipInput" type="TextEdit" parent="ipLabel"]
+margin_left = -1.89999
+margin_top = 19.0
+margin_right = 272.1
+margin_bottom = 63.0
+text = "127.0.0.1"
+
+[node name="portLabel" type="Label" parent="."]
+margin_left = 627.0
+margin_top = 170.05
+margin_right = 667.0
+margin_bottom = 184.05
+text = "port"
+
+[node name="portInput" type="TextEdit" parent="portLabel"]
+margin_left = -7.95001
+margin_top = 20.55
+margin_right = 98.05
+margin_bottom = 64.55
+text = "12345"
+
+[node name="nameLabel" type="Label" parent="."]
+margin_left = 344.85
+margin_top = 307.8
+margin_right = 384.85
+margin_bottom = 321.8
+text = "name"
+
+[node name="nameInput" type="TextEdit" parent="nameLabel"]
+margin_left = -2.80002
+margin_top = 20.6
+margin_right = 271.2
+margin_bottom = 64.6
+text = "test"
+
+[node name="back button" type="Button" parent="."]
+margin_left = 193.55
+margin_top = 455.5
+margin_right = 324.55
+margin_bottom = 508.5
+text = "back"
+
+[node name="join button" type="Button" parent="."]
+margin_left = 633.4
+margin_top = 459.3
+margin_right = 764.4
+margin_bottom = 512.3
+text = "join"
+[connection signal="pressed" from="back button" to="." method="backButtonPressed"]
+[connection signal="pressed" from="join button" to="." method="joinButtonPressed"]
