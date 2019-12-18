@@ -14,7 +14,7 @@ func backButtonPressed():
 
 func joinButtonPressed():
 	var peer = NetworkedMultiplayerENet.new()
-	var error = peer.create_client("127.0.0.1", 4242)
+	var error = peer.create_client(ipInput.text, int(portInput.text))
 	if (error):
 		print("error: " + error)
 		return
