@@ -221,5 +221,7 @@ margin_left = 242.285
 margin_top = 504.856
 margin_right = 354.285
 margin_bottom = 552.856
+disabled = true
 text = "start"
 [connection signal="pressed" from="chat/sendButton" to="." method="sendButtonPressed"]
+[connection signal="pressed" from="startButton" to="." method="startButtonPressed"]
