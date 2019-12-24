@@ -28,6 +28,6 @@ func sendButtonPressed():
 
 remotesync func switchToGameScene(scenePath):
 	get_tree().change_scene(scenePath)
-
+	
 func startButtonPressed():
 	rpc("switchToGameScene", "res://scenes/levels/test.tscn")

@@ -22,9 +22,9 @@ public class test : Node2D
         if (GetTree().Multiplayer.IsNetworkServer())
         {
             if (Input.IsKeyPressed((int)KeyList.W))
-            {
-                sprite.Position += new Vector2(0, 1);
-            }
+                sprite.Position += new Vector2(0, -1);
+			if (Input.IsKeyPressed((int)KeyList.S))
+				sprite.Position += new Vector2(0, 1);
         }
 
         Rpc("updatePosition", sprite.Position);

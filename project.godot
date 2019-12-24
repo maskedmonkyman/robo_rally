@@ -22,6 +22,7 @@ config/icon="res://icon.png"
 [autoload]
 
 global="*res://global_script.gd"
+test_global="*res://Global.cs"
 
 [rendering]
 
