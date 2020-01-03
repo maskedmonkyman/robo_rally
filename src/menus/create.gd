@@ -6,7 +6,7 @@ func _ready():
 	pass
 
 func backButtonPressed():
-	get_tree().change_scene("res://scenes/menus/main_menu/main_menu.tscn")
+	get_tree().change_scene("res://scenes/menus/main.tscn")
 
 func createButtonPressed():
 	var server = NetworkedMultiplayerENet.new()
@@ -16,4 +16,4 @@ func createButtonPressed():
 		return
 	get_tree().set_network_peer(server)
 	global.playerName = get_node("name/TextEdit").text
-	get_tree().change_scene("res://scenes/menus/lobby_menu/lobby_menu.tscn")
+	get_tree().change_scene("res://scenes/menus/lobby.tscn")

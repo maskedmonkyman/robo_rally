@@ -16,13 +16,13 @@ _global_script_class_icons={
 [application]
 
 config/name="robo rally"
-run/main_scene="res://scenes/menus/main_menu/main_menu.tscn"
+run/main_scene="res://scenes/menus/main.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
-global="*res://global_script.gd"
-test_global="*res://Global.cs"
+global="*res://src/global_script.gd"
+test_global="*res://src/Global.cs"
 
 [rendering]
 
